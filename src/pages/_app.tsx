@@ -23,7 +23,7 @@ function App({ Component, pageProps }: AppProps) {
             pathname.startsWith('/login')
         ) {
             return (
-                <UserProvider profileUrl="/nextjs-mbs/api/auth/me">
+                <UserProvider profileUrl="//api/auth/me">
                     <AuthContextProvider>
                         <AuthLayout>
                             <Component {...pageProps} />
@@ -33,7 +33,7 @@ function App({ Component, pageProps }: AppProps) {
             );
         } else if ( pathname.startsWith('/admin') ) {
             return (
-                <UserProvider profileUrl="/nextjs-mbs/api/auth/me">
+                <UserProvider profileUrl="//api/auth/me">
                     <AuthContextProvider>
                         <AdminLayout>
                             <Component {...pageProps} />

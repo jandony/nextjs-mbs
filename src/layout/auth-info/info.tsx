@@ -66,7 +66,7 @@ const AuthInfo = React.memo((props: any) => {
                         className="rounded-full ltr:mr-4 rtl:ml-4"
                         src={
                             user?.picture ??
-                            '/nextjs-mbs/img/avatar/chat-auth.png'
+                            '/img/avatar/chat-auth.png'
                         }
                         alt=""
                         width="50"
@@ -171,7 +171,7 @@ const AuthInfo = React.memo((props: any) => {
                 >
                     <Image
                         className="w-3.5 h-3.5 ltr:mr-2 rtl:ml-2"
-                        src="/nextjs-mbs/img/flag/en.png"
+                        src="/img/flag/en.png"
                         alt=""
                         width="20"
                         height="20"
@@ -190,7 +190,7 @@ const AuthInfo = React.memo((props: any) => {
                 >
                     <Image
                         className="w-3.5 h-3.5 ltr:mr-2 rtl:ml-2"
-                        src="/nextjs-mbs/img/flag/esp.png"
+                        src="/img/flag/esp.png"
                         alt=""
                         width="20"
                         height="20"
@@ -209,7 +209,7 @@ const AuthInfo = React.memo((props: any) => {
                 >
                     <Image
                         className="w-3.5 h-3.5 ltr:mr-2 rtl:ml-2"
-                        src="/nextjs-mbs/img/flag/ar.png"
+                        src="/img/flag/ar.png"
                         alt=""
                         width="20"
                         height="20"
@@ -232,7 +232,7 @@ const AuthInfo = React.memo((props: any) => {
                 <DropDown placement="bottomRight" customContent={country}>
                     <Link href="#" className="flex">
                         <Image
-                            src="/nextjs-mbs/img/flag/en.png"
+                            src="/img/flag/en.png"
                             alt=""
                             width="20"
                             height="20"
@@ -253,7 +253,7 @@ const AuthInfo = React.memo((props: any) => {
                         <Image
                             src={
                                 user?.picture ??
-                                '/nextjs-mbs/img/avatar/matureman1.png'
+                                '/img/avatar/matureman1.png'
                             }
                             alt="Avatar"
                             width="32"

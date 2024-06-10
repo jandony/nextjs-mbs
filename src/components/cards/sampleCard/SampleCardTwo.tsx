@@ -15,7 +15,7 @@ function SampleCardTwo({ item }: SampleCardProps) {
         <figure className="mb-0 bg-white dark:bg-white/10 rounded-10 p-[25px]">
             <img
                 className="w-[60px] h-[60px] rounded-t-10"
-                src={`/nextjs-mbs/${img}`}
+                src={`/${img}`}
                 alt=""
             />
             <figcaption>

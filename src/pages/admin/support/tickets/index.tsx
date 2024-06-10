@@ -164,7 +164,7 @@ function SupportTicket() {
         requested: (
           <div className="flex items-center gap-x-[20px] gap-y-[15px]">
             <div>
-              <img className="max-w-[30px] rounded-full" src={`/hexadash-nextjs/${user.img}`} alt="" />
+              <img className="max-w-[30px] rounded-full" src={`/${user.img}`} alt="" />
             </div>
             <div>
               <p className="mb-0 text-[15px] text-theme-gray dark:text-white/60 font-medium">{user.name}</p>
@@ -223,7 +223,7 @@ function SupportTicket() {
           ...values,
           user: {
             name: 'Kellie Marquot',
-            img: '/hexadash-nextjs/img/avatar/profileImage.png',
+            img: '/img/avatar/profileImage.png',
             conversations: [],
           },
           createAt: moment().format('MM-DD-yyyy'),

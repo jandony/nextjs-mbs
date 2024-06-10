@@ -298,42 +298,42 @@ function SingleGroupChat({ match }: any) {
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="#">
                                     <img
                                         className="max-w-[30px]"
-                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                        src="/img/avatar/chat-auth.png"
                                         alt=""
                                     />
                                 </Link>
@@ -388,7 +388,7 @@ function SingleGroupChat({ match }: any) {
                                                 {mes.email !== me ? (
                                                     <img
                                                         className="max-w-[46px] xs:max-w-[32px] ltr:mr-[15px] rtl:ml-[15px] rounded-full"
-                                                        src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                        src="/img/avatar/chat-auth.png"
                                                         alt=""
                                                     />
                                                 ) : null}
@@ -509,32 +509,32 @@ function SingleGroupChat({ match }: any) {
                                                     index + 1 ? (
                                                         <div className="group-seen flex items-center justify-end w-full gap-x-1 mt-[10px] gap-[5px] text-end">
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />
                                                             <img
-                                                                src="/hexadash-nextjs/img/avatar/chat-auth.png"
+                                                                src="/img/avatar/chat-auth.png"
                                                                 alt=""
                                                                 className="flex items-center justify-center w-[18px] h-[18px] border border-dashed border-deep dark:border-white/10 rounded-full"
                                                             />

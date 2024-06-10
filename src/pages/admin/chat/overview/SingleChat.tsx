@@ -353,7 +353,7 @@ function SingleChat({ match, dashboard }: any) {
                                                     <>
                                                         <img
                                                             className="max-w-[46px] xs:max-w-[32px] ltr:mr-[15px] rtl:ml-[15px] rounded-full"
-                                                            src={`/hexadash-nextjs/img/chat-author/${mes.img}`}
+                                                            src={`/img/chat-author/${mes.img}`}
                                                             alt=""
                                                         />
                                                     </>
@@ -481,7 +481,7 @@ function SingleChat({ match, dashboard }: any) {
                                                             </span>
                                                             <img
                                                                 className="max-w-[20px] rounded-full"
-                                                                src={`/hexadash-nextjs/img/chat-author/${mes.img}`}
+                                                                src={`/img/chat-author/${mes.img}`}
                                                                 alt=""
                                                             />
                                                         </div>

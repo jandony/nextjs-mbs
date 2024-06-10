@@ -79,7 +79,7 @@ function ProductDetails() {
                                 <figure className="mb-0">
                                     <img
                                         className="w-full rounded-[10px]"
-                                        src={`/nextjs-mbs/${img}`}
+                                        src={`/${img}`}
                                         alt=""
                                     />
                                 </figure>
@@ -113,7 +113,7 @@ function ProductDetails() {
                                                                       >
                                                                           <img
                                                                               className="w-full min-w-[90px] md:min-w-[60px] rounded-10 md:rounded-4"
-                                                                              src={`/nextjs-mbs/${value.img}`}
+                                                                              src={`//${value.img}`}
                                                                               alt=""
                                                                           />
                                                                       </Link>

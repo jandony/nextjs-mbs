@@ -4,11 +4,9 @@ import { useRouter } from 'next/router'
 import { Form, Input, Button, Row, Col } from 'antd'
 import { useDispatch } from 'react-redux'
 import { logInAction } from '@/redux/authentication/actionCreator'
-import { ReactSVG } from 'react-svg'
 import { UilFacebook, UilTwitter, UilGithub } from '@iconscout/react-unicons'
+import { FaGoogle } from "react-icons/fa";
 import { CheckBox } from '@/components/checkbox'
-
-import GooglePlus from '../../public/img/icon/google-plus.svg';
 
 import { useUser } from '@auth0/nextjs-auth0/client'
 import { useAuth } from './AuthContext'
@@ -178,10 +176,7 @@ function SignIn() {
                                         href="#"
                                         className="flex items-center justify-center h-12 px-4 rounded-md google-social group bg-google-plus-transparent hover:bg-google-plus text-google-plus hover:text-white"
                                     >
-                                        <ReactSVG
-                                            className="[&>div>svg>path]:fill-google-plus group-hover:[&>div>svg>path]:fill-white"
-                                            src={GooglePlus}
-                                        />
+                                        <FaGoogle className="text-lg" />
                                     </Link>
                                 </li>
                                 <li className="px-1.5 pt-3 pb-2.5">

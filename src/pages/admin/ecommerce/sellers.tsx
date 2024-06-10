@@ -87,7 +87,7 @@ function Sellers() {
                     <div className="flex items-center">
                         <img
                             className="ltr:mr-3 rtl:ml-3"
-                            src={`/nextjs-mbs/${img}`}
+                            src={`/${img}`}
                             alt=""
                         />
                         <span className="font-medium text-body dark:text-white/60">

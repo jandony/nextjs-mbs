@@ -16,7 +16,7 @@ function Newsletter() {
             </figcaption>
             <img
                 className="max-w-[150px] 3xl:max-w-[100px]"
-                src={require('/nextjs-mbs/img/new-message.png')}
+                src={require('/img/new-message.png')}
                 alt=""
             />
         </div>

@@ -62,7 +62,7 @@ function SingleKnowledgeDetails() {
                     </p>
                     <div className="mt-8">
                         <img
-                            src="/hexadash-nextjs/img/knowledgebase/wp-research.png"
+                            src="/img/knowledgebase/wp-research.png"
                             alt="StrikingDash"
                         />
                     </div>

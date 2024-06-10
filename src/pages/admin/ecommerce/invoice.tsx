@@ -193,12 +193,12 @@ function Invoice() {
                                         <figure className="sm:flex sm:items-center sm:justify-center">
                                             {mainContent === 'lightMode' ? (
                                                 <img
-                                                    src="/nextjs-mbs/img/logo_dark.svg"
+                                                    src="/img/logo_dark.svg"
                                                     alt=""
                                                 />
                                             ) : (
                                                 <img
-                                                    src="/nextjs-mbs/img/logo_white.svg"
+                                                    src="/img/logo_white.svg"
                                                     alt=""
                                                 />
                                             )}
@@ -234,13 +234,13 @@ function Invoice() {
                                         {mainContent === 'lightMode' ? (
                                             <img
                                                 style={{ width: '100%' }}
-                                                src="/nextjs-mbs/img/barcode.png"
+                                                src="/img/barcode.png"
                                                 alt="barcode"
                                             />
                                         ) : (
                                             <img
                                                 style={{ width: '100%' }}
-                                                src="/nextjs-mbs/img/bar-dark.png"
+                                                src="/img/bar-dark.png"
                                                 alt="barcode"
                                             />
                                         )}

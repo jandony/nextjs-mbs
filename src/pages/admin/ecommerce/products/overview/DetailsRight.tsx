@@ -149,7 +149,7 @@ const DetailsRight = React.memo(({ product }:Item) => {
             shape="circle"
           >
             {popular ? (
-              <ReactSVG src={`/hexadash-nextjs/img/icon/heart-fill.svg`} />
+              <ReactSVG src={`/img/icon/heart-fill.svg`} />
             ) : (
               <UilHeart className="w-[14px] h-[14px]" />
             )}

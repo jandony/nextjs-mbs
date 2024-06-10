@@ -56,7 +56,7 @@ function DragAndDropTable() {
                     <figure className="mb-0">
                         <img
                             style={{ width: '40px' }}
-                            src={`/nextjs-mbs/${img}`}
+                            src={`/${img}`}
                             alt=""
                         />
                     </figure>

@@ -74,7 +74,7 @@ const BrowserState = React.memo(() => {
                             <div className="ltr:mr-2.5 rtl:ml-2.5 w-8 h-8">
                                 <Image
                                     className="w-8 h-8"
-                                    src={`/nextjs-mbs/img/browser/${img}`}
+                                    src={`/img/browser/${img}`}
                                     width="32"
                                     height="32"
                                     alt={name}

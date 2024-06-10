@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Buttons } from '@/components/buttons';
 import Image from 'next/image';
 import LogoDark from '../../public/img/logo_dark.svg';
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
@@ -30,9 +31,11 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                                     className="bg-primary text-white h-11">Get Started</Buttons>
                             </Link>
                             <Link href='#'>
-                                <Buttons size="default"
-                                    type="primary"
-                                    className="bg-primary text-white h-11 rounded-full">Light</Buttons>
+                                <Buttons
+                                    type="ghost"
+                                    className="bg-white text-primary rounded-full p-3 h-auto border">
+                                        <FaMoon className="text-lg"/>
+                                    </Buttons>
                             </Link>
                         </div>
                     </div>

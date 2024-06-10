@@ -96,7 +96,7 @@ function Single() {
                 <div className="flex gap-5 ssm:flex-col">
                     <img
                         className="w-[50px] h-[50px] rounded-full object-cover"
-                        src="/hexadash-nextjs/img/email/2.png"
+                        src="/img/email/2.png"
                         alt=""
                     />
                     <MailComposer
@@ -115,7 +115,7 @@ function Single() {
                 <div className="flex gap-5 ssm:flex-col">
                     <img
                         className="w-[50px] h-[50px] rounded-full object-cover"
-                        src="/hexadash-nextjs/img/email/1.png"
+                        src="/img/email/1.png"
                         alt=""
                     />
                     <MailComposer
@@ -279,7 +279,7 @@ function Single() {
                                 <div className="flex items-center gap-5 mt-5">
                                     <img
                                         className="min-2xl:w-[60px] min-2xl:h-[60px] w-[50px] h-[50px] rounded-full object-cover"
-                                        src={`/hexadash-nextjs/${img}`}
+                                        src={`/${img}`}
                                         alt=""
                                     />
                                     <div>
@@ -362,7 +362,7 @@ function Single() {
                                 <figure className="group relative p-2.5 mb-[30px] mx-[5px] border dark:border-white/10 rounded-[10px]">
                                     <div className="relative before:absolute ltr:before:left-0 rtl:before:right-0 before:top-0 before:w-full before:h-0 before:bg-dark-transparent before:rounded-[10px] before:transition-all group-hover:before:h-full">
                                         <img
-                                            src="/hexadash-nextjs/img/email/2.png"
+                                            src="/img/email/2.png"
                                             alt=""
                                         />
                                     </div>
@@ -396,7 +396,7 @@ function Single() {
                                 <figure className="group relative p-2.5 mb-[30px] mx-[5px] border dark:border-white/10 rounded-[10px]">
                                     <div className="relative before:absolute ltr:before:left-0 rtl:before:right-0 before:top-0 before:w-full before:h-0 before:bg-dark-transparent before:rounded-[10px] before:transition-all group-hover:before:h-full">
                                         <img
-                                            src="/hexadash-nextjs/img/email/1.png"
+                                            src="/img/email/1.png"
                                             alt=""
                                         />
                                     </div>
@@ -430,7 +430,7 @@ function Single() {
                                 <figure className="group relative p-2.5 mb-[30px] mx-[5px] border dark:border-white/10 rounded-[10px]">
                                     <div className="relative before:absolute ltr:before:left-0 rtl:before:right-0 before:top-0 before:w-full before:h-0 before:bg-dark-transparent before:rounded-[10px] before:transition-all group-hover:before:h-full">
                                         <img
-                                            src="/hexadash-nextjs/img/email/3.png"
+                                            src="/img/email/3.png"
                                             alt=""
                                         />
                                     </div>
@@ -464,7 +464,7 @@ function Single() {
                                 <figure className="group relative p-2.5 mb-[30px] mx-[5px] border dark:border-white/10 rounded-[10px]">
                                     <div className="relative before:absolute ltr:before:left-0 rtl:before:right-0 before:top-0 before:w-full before:h-0 before:bg-dark-transparent before:rounded-[10px] before:transition-all group-hover:before:h-full">
                                         <img
-                                            src="/hexadash-nextjs/img/email/4.png"
+                                            src="/img/email/4.png"
                                             alt=""
                                         />
                                     </div>
@@ -506,7 +506,7 @@ function Single() {
                         <figure className="flex justify-between flex-wrap gap-[20px]">
                             <img
                                 className="w-[50px] h-[50px] rounded-full object-cover"
-                                src="/hexadash-nextjs/img/email/2.png"
+                                src="/img/email/2.png"
                                 alt=""
                             />
                             <figcaption>

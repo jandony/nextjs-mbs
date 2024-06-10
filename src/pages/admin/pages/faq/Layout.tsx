@@ -130,7 +130,7 @@ const FaqLayout = ({ children }: { children: React.ReactNode }) => {
                     <figure className="mx-auto mb-7">
                       <Image 
                         className="w-full" 
-                        src='/hexadash-nextjs/img/pages/support.svg'
+                        src='/img/pages/support.svg'
                         alt="" 
                         width="320"
                         height="217"

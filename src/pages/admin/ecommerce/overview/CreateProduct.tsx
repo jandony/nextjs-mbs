@@ -25,8 +25,8 @@ function CreateProduct() {
       uid: '1',
       name: '1.png',
       status: 'done',
-      url: '/hexadash-nextjs/img/products/1.png',
-      thumbUrl: '/hexadash-nextjs/img/products/1.png',
+      url: '/img/products/1.png',
+      thumbUrl: '/img/products/1.png',
     },
   ];
 

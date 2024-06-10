@@ -174,7 +174,7 @@ function CheckOut() {
                             <img
                                 className="max-w-20 max-h-20 rounded-[10px]"
                                 style={{ width: 80 }}
-                                src={`/nextjs-mbs/${img}`}
+                                src={`/${img}`}
                                 alt=""
                             />
                             <figcaption>
@@ -499,21 +499,21 @@ function CheckOut() {
                                                                     style={{
                                                                         width: '50px',
                                                                     }}
-                                                                    src="/nextjs-mbs/img/cards-logo/ms.png"
+                                                                    src="/img/cards-logo/ms.png"
                                                                     alt=""
                                                                 />
                                                                 <img
                                                                     style={{
                                                                         width: '50px',
                                                                     }}
-                                                                    src="/nextjs-mbs/img/cards-logo/american-express.png"
+                                                                    src="/img/cards-logo/american-express.png"
                                                                     alt=""
                                                                 />
                                                                 <img
                                                                     style={{
                                                                         width: '50px',
                                                                     }}
-                                                                    src="/nextjs-mbs/img/cards-logo/visa.png"
+                                                                    src="/img/cards-logo/visa.png"
                                                                     alt=""
                                                                 />
                                                             </div>
@@ -664,7 +664,7 @@ function CheckOut() {
                                                     Pay With PayPal
                                                     <img
                                                         className="xs:hidden"
-                                                        src="/nextjs-mbs/img/PayPalLogo.png"
+                                                        src="/img/PayPalLogo.png"
                                                         alt="paypal"
                                                     />
                                                 </Radio>
@@ -783,7 +783,7 @@ function CheckOut() {
                                                     >
                                                         <div className="mb-2 text-[15px] font-medium">
                                                             <img
-                                                                src="/nextjs-mbs/img/ms.svg"
+                                                                src="/img/ms.svg"
                                                                 alt=""
                                                             />
                                                             **** **** **** 2597

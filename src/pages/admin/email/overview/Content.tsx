@@ -100,7 +100,7 @@ function Content({ searchData, email }: any) {
             </Link>
             <img
               className="inline-block w-8 h-8 rounded-full ltr:ml-5 rtl:mr-5 ltr:mr-4 rtl:ml-4"
-              src={`/hexadash-nextjs/${img}`}
+              src={`/${img}`}
               alt=""
             />
             <Heading as="h5" className="text-[15px] font-medium">
@@ -136,7 +136,7 @@ function Content({ searchData, email }: any) {
                       key={item}
                       className="inline-flex items-center bg-deepBG dark:bg-white/10 h-[30px] mt-[15px] px-5 text-light dark:text-white/60 text-[13px] rounded-[15px]"
                       download
-                      href={`/hexadash-nextjs/img/email/${item}`}
+                      href={`/img/email/${item}`}
                     >
                       <UilPaperclip className="w-4 ltr:mr-1.5 rtl:ml-1.5" />
                       {item}

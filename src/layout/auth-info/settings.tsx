@@ -15,7 +15,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/014-document.png"
+                                src="/img/icon/014-document.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -37,7 +37,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/015-color-palette.png"
+                                src="/img/icon/015-color-palette.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -59,7 +59,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/010-home.png"
+                                src="/img/icon/010-home.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -81,7 +81,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/017-video-camera.png"
+                                src="/img/icon/017-video-camera.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -103,7 +103,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/013-document-1.png"
+                                src="/img/icon/013-document-1.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -125,7 +125,7 @@ const Settings = React.memo(() => {
                         <figure className="flex items-start px-4 py-5 mb-0 setting-dropdown__single hover:shadow-action">
                             <Image
                                 className="h-fit ltr:mr-4 rtl:ml-4"
-                                src="/nextjs-mbs/img/icon/007-microphone-1.png"
+                                src="/img/icon/007-microphone-1.png"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -154,7 +154,7 @@ const Settings = React.memo(() => {
                 <Link href="#" className="flex hexadash-nav-action-link">
                     <ReactSVG
                         className="text-[#a0a0a0] dark:text-white/60"
-                        src="/nextjs-mbs/img/icon/setting.svg"
+                        src="/img/icon/setting.svg"
                     />
                 </Link>
             </PopOver>

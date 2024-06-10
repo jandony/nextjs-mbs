@@ -94,7 +94,7 @@ function BlogDetails() {
                             <div className="mb-20">
                                 <img
                                     className="rounded-10"
-                                    src={`/nextjs-mbs/img/blogs/blog-details/${img}`}
+                                    src={`/img/blogs/blog-details/${img}`}
                                     alt={title}
                                 />
                                 <div className="px-24 3xl:px-14 2xl:px-[30px] xl:px-0">
@@ -106,7 +106,7 @@ function BlogDetails() {
                                             <li className="relative flex items-center gap-x-2.5 m-1 text-light dark:text-white/60 text-15">
                                                 <img
                                                     className="max-w-[50px]"
-                                                    src={`/nextjs-mbs/img/users/${authorImg}`}
+                                                    src={`/img/users/${authorImg}`}
                                                     alt={author}
                                                 />
                                                 <span className="inline-block text-base font-semibold text-dark dark:text-white/[.87]">
@@ -167,7 +167,7 @@ function BlogDetails() {
                                             stress.
                                         </p>
                                         <img
-                                            src="/nextjs-mbs/img/blogs/blog-details/details.png"
+                                            src="/img/blogs/blog-details/details.png"
                                             alt={title}
                                         />
                                         <h3 className="mt-12 mb-5 text-2xl font-semibold text-dark dark:text-white/[.87] md:text-xl sm:text-lg">
@@ -188,7 +188,7 @@ function BlogDetails() {
                                                 <p className="relative text-xl ltr:pl-5 rtl:pr-5 text-dark dark:text-white/[.87]">
                                                     <img
                                                         className="absolute ltr:left-0 rtl:right-0 top-1 max-w-[15px]"
-                                                        src="/nextjs-mbs/img/icon/quote-left.png"
+                                                        src="/img/icon/quote-left.png"
                                                         alt="hexadash blockquote"
                                                     />
                                                     Usability design is to
@@ -200,7 +200,7 @@ function BlogDetails() {
                                                     agreed to
                                                     <img
                                                         className="inline-block -mb-1 ltr:ml-1 rtl:mr-1 max-w-[15px]"
-                                                        src="/nextjs-mbs/img/icon/quote-right.png"
+                                                        src="/img/icon/quote-right.png"
                                                         alt="hexadash blockquote"
                                                     />
                                                 </p>
@@ -394,7 +394,7 @@ function BlogDetails() {
                                         <div>
                                             <img
                                                 className="max-w-[70px]"
-                                                src="/nextjs-mbs/img/users/1.png"
+                                                src="/img/users/1.png"
                                                 alt="hexadash Blog"
                                             />
                                         </div>

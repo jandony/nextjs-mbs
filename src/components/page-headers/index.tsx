@@ -31,7 +31,7 @@ function PageHeaders(props: PageHeadersProps) {
                       <div className="inline-flex items-start group text-light dark:text-light-extra">
                           <ReactSVG
                               className="relative top-0.5 me-2 [&>div>svg]:text-current group-hover:text-primary dark:group-hover:text-white/[.87] duration-200"
-                              src="/nextjs-mbs/img/icon/home.svg"
+                              src="/img/icon/home.svg"
                           />{' '}
                           <Link
                               href={route.path}

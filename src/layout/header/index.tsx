@@ -6,11 +6,14 @@ import Customizer from '../customizer'
 import TopMenu from '@/layout/TopMenu'
 import Search from '@/layout/auth-info/Search'
 import AuthInfo from '@/layout/auth-info/info'
-import { ReactSVG } from 'react-svg'
 
 import { Col, Layout, Row } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeMenuCollapse } from '@/redux/themeLayout/actionCreator'
+
+import DarkLogo from '../../../public/img/logo_dark.svg';
+import WhiteLogo from '../../../public/img/logo_white.svg';
+import leftBar from '../../../public/img/icon/left-bar.svg';
 
 const { Header } = Layout
 
@@ -79,8 +82,8 @@ const HeaderTop = () => {
                                     className="w-full max-w-[120px] xs:max-w-[100px]"
                                     src={
                                         layoutMode === 'lightMode'
-                                            ? '/nextjs-mbs/img/logo_dark.svg'
-                                            : '/nextjs-mbs/img/logo_white.svg'
+                                            ? DarkLogo
+                                            : WhiteLogo
                                     }
                                     alt="Logo"
                                     width="140"
@@ -96,8 +99,9 @@ const HeaderTop = () => {
                                         toggleCollapsed(!collapsed)
                                     }}
                                 >
-                                    <ReactSVG
-                                        src={`/nextjs-mbs/img/icon/left-bar.svg`}
+                                    <Image
+                                        src={leftBar}
+                                        alt="sidebar toggle"
                                         className="[&>div>svg]:w-[20px] [&>div>svg]:h-[20px]"
                                     />
                                 </button>

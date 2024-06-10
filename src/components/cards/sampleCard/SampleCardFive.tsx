@@ -15,7 +15,7 @@ function SampleCardFive({ item }: SampleCardProps) {
 
     return (
         <figure className="relative mb-0 overflow-hidden bg-white dark:bg-white/10 rounded-10 ">
-            <img className="w-full" src={`/nextjs-mbs/${img}`} alt="" />
+            <img className="w-full" src={`/${img}`} alt="" />
             <figcaption className="absolute bottom-0 ltr:left-0 rtl:right-0 p-[25px] bg-dark/50 text-white dark:text-white/[.87] flex flex-col justify-center h-full w-full">
                 <h2 className="text-white dark:text-white/[.87] mb-[10px] text-[18px] font-semibold">
                     {title}
@@ -27,7 +27,7 @@ function SampleCardFive({ item }: SampleCardProps) {
                     <div className="inline-flex flex-wrap items-center gap-[10px]">
                         <img
                             className="w-[50px] h-[50px] rounded-full object-cover"
-                            src={`/nextjs-mbs/${auth}`}
+                            src={`//${auth}`}
                             alt=""
                         />
                         <span className="font-medium text-[13px]">

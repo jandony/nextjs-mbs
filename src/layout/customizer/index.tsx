@@ -149,7 +149,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/ltr.png"
+                                            src="/img/ltr.png"
                                             alt=""
                                             width="141"
                                             height="87"
@@ -173,7 +173,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/rtl.png"
+                                            src="/img/rtl.png"
                                             alt=""
                                             width="141"
                                             height="87"
@@ -205,7 +205,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/light.png"
+                                            src="/img/light.png"
                                             alt=""
                                             width="141"
                                             height="87"
@@ -230,7 +230,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/dark.png"
+                                            src="/img/dark.png"
                                             alt=""
                                             width="141"
                                             height="87"
@@ -261,7 +261,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/side.png"
+                                            src="/img/side.png"
                                             alt=""
                                             width="141"
                                             height="87"
@@ -285,7 +285,7 @@ const Customizer = (props: any) => {
                                         className="p-0 border-none shadow-none"
                                     >
                                         <Image
-                                            src="/nextjs-mbs/img/top.png"
+                                            src="/img/top.png"
                                             alt=""
                                             width="141"
                                             height="87"

@@ -86,7 +86,7 @@ function ComingSoon() {
                                 {mainContent === 'lightMode' ? (
                                     <Image
                                         className="mx-auto"
-                                        src={'/nextjs-mbs/img/logo_dark.svg'}
+                                        src={'/img/logo_dark.svg'}
                                         alt=""
                                         width="140"
                                         height="32"
@@ -94,7 +94,7 @@ function ComingSoon() {
                                 ) : (
                                     <Image
                                         className="mx-auto"
-                                        src={'/nextjs-mbs/img/logo_white.svg'}
+                                        src={'/img/logo_white.svg'}
                                         alt=""
                                         width="140"
                                         height="32"

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { ReactSVG } from 'react-svg'
 import { Row, Col, Form, Input, Button } from 'antd'
 import { UilFacebook, UilTwitter, UilGithub } from '@iconscout/react-unicons'
 
@@ -10,6 +9,7 @@ import { CheckBox } from '@/components/checkbox'
 import { registerAction } from '@/redux/authentication/actionCreator'
 
 import { useAuth } from './AuthContext'
+import { FaGoogle } from 'react-icons/fa'
 
 function SignUp() {
     const [error, setError] = useState('')
@@ -174,10 +174,7 @@ function SignUp() {
                                         href="#"
                                         className="flex items-center justify-center h-12 px-4 rounded-md google-social bg-google-plus-transparent hover:bg-google-plus text-google-plus hover:text-white"
                                     >
-                                        <ReactSVG
-                                            className="[&>div>svg>path]:fill-google-plus group-hover:[&>div>svg>path]:fill-white"
-                                            src="/nextjs-mbs/img/icon/google-plus.svg"
-                                        />
+                                        <FaGoogle className="text-lg" />
                                     </Link>
                                 </li>
                                 <li className="px-1.5 pt-3 pb-2.5">

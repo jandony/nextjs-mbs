@@ -87,7 +87,7 @@ function Testimonials() {
             el: '.swiper-pagination-gallery',
             clickable: true,
             renderBullet(index: number, className: string) {
-                return `<span class="inline-block w-auto h-auto my-1 mx-0 opacity-40 cursor-pointer ${className}"><img class="max-w-[70px] lg:max-w-[40px] ssm:max-w-[25px]" src="${`/nextjs-mbs/${users[index].img}`}" alt="" /></span>`
+                return `<span class="inline-block w-auto h-auto my-1 mx-0 opacity-40 cursor-pointer ${className}"><img class="max-w-[70px] lg:max-w-[40px] ssm:max-w-[25px]" src="${`//${users[index].img}`}" alt="" /></span>`
             },
         },
     }
@@ -125,7 +125,7 @@ function Testimonials() {
                                         <figure className="mb-0">
                                             <Image
                                                 className="mx-auto mb-3 sm:max-w-[100px] ssm:max-w-[70px]"
-                                                src={`/nextjs-mbs/${user.img}`}
+                                                src={`//${user.img}`}
                                                 alt=""
                                                 width="60"
                                                 height="46"
@@ -147,10 +147,10 @@ function Testimonials() {
                             })}
                         </Swiper>
                         <div className="swiper-button-prev">
-                            <img src="/nextjs-mbs/img/icon/arrow-left.png" />
+                            <img src="/img/icon/arrow-left.png" />
                         </div>
                         <div className="swiper-button-next">
-                            <img src="/nextjs-mbs/img/icon/arrow-right.png" />
+                            <img src="/img/icon/arrow-right.png" />
                         </div>
                     </div>
                     <div className="relative px-24 lg:px-14 md:px-10 sm:px-[15px] xs:px-0 theme-2 pt-16 pb-[75px] lg:pb-[50px]">
@@ -165,7 +165,7 @@ function Testimonials() {
                                             <span className="absolute ltr:right-10 rtl:left-10 top-10">
                                                 <Image
                                                     className="sm:max-w-[50px] ssm:max-w-[30px]"
-                                                    src="/nextjs-mbs/img/icon/quote.png"
+                                                    src="/img/icon/quote.png"
                                                     alt=""
                                                     width="60"
                                                     height="46"
@@ -174,7 +174,7 @@ function Testimonials() {
                                             <div className="flex items-center mb-5 gap-[20px] ssm:gap-[10px] rtl-true">
                                                 <Image
                                                     className="max-w-[70px] sm:max-w-[50px]"
-                                                    src={`/nextjs-mbs/${user.img}`}
+                                                    src={`//${user.img}`}
                                                     alt=""
                                                     width="60"
                                                     height="46"
@@ -205,10 +205,10 @@ function Testimonials() {
                                 )
                             })}
                             <div className="swiper-button-prev">
-                                <img src="/nextjs-mbs/img/icon/arrow-left.png" />
+                                <img src="/img/icon/arrow-left.png" />
                             </div>
                             <div className="swiper-button-next">
-                                <img src="/nextjs-mbs/img/icon/arrow-right.png" />
+                                <img src="/img/icon/arrow-right.png" />
                             </div>
                         </Swiper>
                     </div>
@@ -274,7 +274,7 @@ function Testimonials() {
                                             <div>
                                                 <img
                                                     className="mx-auto mb-6 max-w-100"
-                                                    src={`/nextjs-mbs/${user.img}`}
+                                                    src={`//${user.img}`}
                                                     alt=""
                                                 />
                                             </div>
@@ -303,10 +303,10 @@ function Testimonials() {
                                 )
                             })}
                             <div className="swiper-button-prev start-[100px]">
-                                <img src="/nextjs-mbs/img/icon/arrow-left.png" />
+                                <img src="/img/icon/arrow-left.png" />
                             </div>
                             <div className="swiper-button-next end-[100px]">
-                                <img src="/nextjs-mbs/img/icon/arrow-right.png" />
+                                <img src="/img/icon/arrow-right.png" />
                             </div>
                         </Swiper>
                     </div>

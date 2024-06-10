@@ -129,7 +129,7 @@ function ContactTable() {
                         <figure className="mx-2 mb-0">
                             <img
                                 className="w-[40px] h-[40px] min-w-[40px]"
-                                src={`/nextjs-mbs/${img}`}
+                                src={`/${img}`}
                                 alt=""
                             />
                         </figure>

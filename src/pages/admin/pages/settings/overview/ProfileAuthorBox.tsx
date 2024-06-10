@@ -23,7 +23,7 @@ function AuthorBox() {
       <div className="bg-white dark:bg-white/10 rounded-[10px]">
         <div className="-mx-3 px-5 pt-[25px] pb-5 text-center border-b border-regular dark:border-white/10">
           <figure className="relative max-w-[120px] mx-auto mb-6">
-            <Image className="mx-auto" src={'/hexadash-nextjs/img/users/1.png'} alt="" width="120" height="120" />
+            <Image className="mx-auto" src={'/img/users/1.png'} alt="" width="120" height="120" />
             <Upload className="absolute right-0 -bottom-2 flex items-center justify-center bg-white dark:bg-white/10 w-10 h-10 rounded-full">
               <Link href="#" className="inline-flex items-center justify-center bg-primary w-8 h-8 rounded-full">
                 <UilCamera className="w-4 h-4 text-white" />

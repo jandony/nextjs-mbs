@@ -6,9 +6,9 @@ import L from 'leaflet'
 delete (L.Icon.Default.prototype as any)._getIconUrl
 
 L.Icon.Default.mergeOptions({
-    iconRetinaUrl: '/nextjs-mbs/img/map/marker-icon.png',
-    iconUrl: '/nextjs-mbs/img/map/marker-icon.png',
-    shadowUrl: '/nextjs-mbs/img/map/marker-shadow.png',
+    iconRetinaUrl: '/img/map/marker-icon.png',
+    iconUrl: '/img/map/marker-icon.png',
+    shadowUrl: '/img/map/marker-shadow.png',
 })
 
 interface LeafletMapBasicProps {

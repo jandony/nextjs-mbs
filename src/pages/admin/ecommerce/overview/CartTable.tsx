@@ -65,7 +65,7 @@ function CartTable() {
                             <img
                                 className="max-w-[80px] min-h-[80px] ltr:mr-[25px] rtl:ml-[25px] rounded-[10px]"
                                 style={{ width: 80 }}
-                                src={`/nextjs-mbs/${img}`}
+                                src={`/${img}`}
                                 alt=""
                             />
                             <figcaption>

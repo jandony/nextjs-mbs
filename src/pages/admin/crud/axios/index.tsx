@@ -90,7 +90,7 @@ function ViewPage() {
                 src={
                   image
                     ? `${process.env.NEXT_PUBLIC_API_ENDPOINT}/${image}`
-                    : '/hexadash-nextjs/img/avatar/profileImage.png'
+                    : '/img/avatar/profileImage.png'
                 }
                 alt={id}
               />

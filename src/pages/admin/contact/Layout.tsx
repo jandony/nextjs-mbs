@@ -98,7 +98,7 @@ const ContactLayout = ({ children }: { children: React.ReactNode }) => {
                     ...values,
                     id: max + 1,
                     time: new Date().getTime(),
-                    img: '/nextjs-mbs/img/users/6.png',
+                    img: '/img/users/6.png',
                     live: false,
                     stared: false,
                 },

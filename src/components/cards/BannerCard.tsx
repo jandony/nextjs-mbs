@@ -72,7 +72,7 @@ function BannerCard({ item }: BannerCardProps) {
             className={`border-regular dark:border-white/10 border-1 pt-[20px] px-[25px] pb-[25px] bg-${type} [&.bg-primary]:border-none dark:[&.bg-white]:bg-dark rounded-10 bg-cover bg-center`}
             style={{
                 backgroundImage:
-                    bgImage && `url(/nextjs-mbs/img/sampleCards/${bgImage})`,
+                    bgImage && `url(/img/sampleCards/${bgImage})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
@@ -84,7 +84,7 @@ function BannerCard({ item }: BannerCardProps) {
                 >
                     <img
                         className="w-[14px] h-[14px]"
-                        src={`/nextjs-mbs/img/icon/${icon}`}
+                        src={`/img/icon/${icon}`}
                         alt="HexaDash Banner"
                     />
                     <span>{title}</span>
@@ -111,7 +111,7 @@ function BannerCard({ item }: BannerCardProps) {
                 <div className="flex items-center gap-[15px]">
                     <img
                         className="w-[30px] h-[30px] rounded-full"
-                        src={`/nextjs-mbs/img/users/${authorImg}`}
+                        src={`/img/users/${authorImg}`}
                         alt=""
                     />
                     <span

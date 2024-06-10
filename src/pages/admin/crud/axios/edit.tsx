@@ -130,7 +130,7 @@ function Edit() {
                           <img
                             src={
                               customUrl === null
-                                ? '/hexadash-nextjs/img/avatar/profileImage.png'
+                                ? '/img/avatar/profileImage.png'
                                 : `${process.env.REACT_APP_API_ENDPOINT}/${customUrl}`
                             }
                             alt={crud.id}
@@ -168,7 +168,7 @@ function Edit() {
                                 className="max-w-[120px] min-w-[120px] min-h-[120px] rounded-full"
                                 src={
                                   url === null
-                                    ? '/hexadash-nextjs/img/avatar/profileImage.png'
+                                    ? '/img/avatar/profileImage.png'
                                     : `${process.env.NEXT_PUBLIC_API_ENDPOINT}/${url}`
                                 }
                                 alt=""

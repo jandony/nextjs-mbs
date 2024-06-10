@@ -81,7 +81,7 @@ const BestSeller = React.memo(() => {
                         <div className="ltr:mr-2.5 rtl:ml-2.5 w-[34px] h-[34px]">
                             <Image
                                 className="w-[34px] h-[34px]"
-                                src={`/nextjs-mbs/img/sellers/${img}`}
+                                src={`/img/sellers/${img}`}
                                 alt="Product"
                                 width="34"
                                 height="34"

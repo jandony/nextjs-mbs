@@ -33,7 +33,7 @@ function Banner2() {
                 <div className="mb-0">
                     <Image
                         className="absolute bottom-2.5 ltr:right-6 rtl:left-6 3xl:max-w-[150px]"
-                        src="/nextjs-mbs/img/banner/1.png"
+                        src="/img/banner/1.png"
                         alt=""
                         width="145"
                         height="100"
@@ -66,7 +66,7 @@ function Banner3() {
                 <div>
                     <Image
                         className="absolute bottom-2.5 ltr:right-6 rtl:left-6 3xl:max-w-[150px]"
-                        src="/nextjs-mbs/img/banner/2.png"
+                        src="/img/banner/2.png"
                         alt=""
                         width="195"
                         height="175"
@@ -96,7 +96,7 @@ function Banner4() {
                 <div>
                     <Image
                         className="absolute bottom-2.5 ltr:right-0 rtl:left-0 3xl:max-w-[150px]"
-                        src="/nextjs-mbs/img/banner/3.png"
+                        src="/img/banner/3.png"
                         alt=""
                         width="150"
                         height="160"
@@ -129,7 +129,7 @@ function Banner5() {
                 <div>
                     <Image
                         className="absolute ltr:right-0 rtl:left-0 bottom-5 3xl:max-w-[150px]"
-                        src="/nextjs-mbs/img/banner/4.png"
+                        src="/img/banner/4.png"
                         alt=""
                         width="225"
                         height="225"
@@ -160,7 +160,7 @@ function Banner6() {
         <div className="mb-[72px]">
             <Cards
                 bodyStyle={{
-                    background: `url(${'/nextjs-mbs/img/banner/5.png'})`,
+                    background: `url(${'/img/banner/5.png'})`,
                     backgroundSize: 'cover',
                     borderRadius: '10px',
                     minHeight: '270px',
@@ -193,7 +193,7 @@ function Banner7() {
             <div className="relative bg-white dark:bg-white/10 min-h-[270px] pt-10 px-[30px] sm:px-[15px] pb-[70px] rounded-[10px]">
                 <div className="flex items-center gap-4 sm:flex-col mb-0">
                     <Image
-                        src="/nextjs-mbs/img/banner/6.png"
+                        src="/img/banner/6.png"
                         alt=""
                         width="145"
                         height="160"
@@ -224,7 +224,7 @@ function Banner8() {
         <div className="relative bg-dark dark:bg-white/10 min-h-[360px] p-[25px] rounded-[10px]">
             <Image
                 className="absolute ltr:right-0 rtl:left-0 bottom-0 w-[200px] 3xl:max-w-[150px]"
-                src="/nextjs-mbs/img/banner/10.png"
+                src="/img/banner/10.png"
                 alt=""
                 width="195"
                 height="175"
@@ -254,7 +254,7 @@ function Banner9() {
             <div>
                 <Image
                     className="absolute ltr:right-0 rtl:left-0 bottom-0 w-[200px] 3xl:max-w-[150px]"
-                    src="/nextjs-mbs/img/trophy-2.png"
+                    src="/img/trophy-2.png"
                     alt=""
                     width="195"
                     height="175"
@@ -289,7 +289,7 @@ function BannerCarousel() {
                 <div className="flex flex-col items-center justify-center px-5">
                     <div className="banner-single__img">
                         <Image
-                            src="/nextjs-mbs/img/banner/8.png"
+                            src="/img/banner/8.png"
                             alt=""
                             width="164"
                             height="10"
@@ -309,7 +309,7 @@ function BannerCarousel() {
                 <div className="flex flex-col items-center justify-center">
                     <div className="banner-single__img">
                         <Image
-                            src="/nextjs-mbs/img/banner/8.png"
+                            src="/img/banner/8.png"
                             alt=""
                             width="164"
                             height="10"
@@ -329,7 +329,7 @@ function BannerCarousel() {
                 <div className="flex flex-col items-center justify-center">
                     <div className="banner-single__img">
                         <Image
-                            src="/nextjs-mbs/img/banner/8.png"
+                            src="/img/banner/8.png"
                             alt=""
                             width="164"
                             height="10"
@@ -360,7 +360,7 @@ function BannerLong() {
                 </h2>
                 <Image
                     className="mx-auto"
-                    src="/nextjs-mbs/img/banner/9.png"
+                    src="/img/banner/9.png"
                     alt=""
                     width="175"
                     height="340"
@@ -376,7 +376,7 @@ function BannerCard() {
             <div
                 className="pt-9 px-10 pb-10 rounded-[10px]"
                 style={{
-                    backgroundImage: `url("${'/nextjs-mbs/img/banner/card-banner-1.png'}")`,
+                    backgroundImage: `url("${'/img/banner/card-banner-1.png'}")`,
                     minHeight: '450px',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center bottom',
@@ -403,7 +403,7 @@ function BannerCard2() {
             <div
                 className="pt-9 px-10 pb-10 rounded-[10px]"
                 style={{
-                    backgroundImage: `url("${'/nextjs-mbs/img/banner/card-banner-2.png'}")`,
+                    backgroundImage: `url("${'/img/banner/card-banner-2.png'}")`,
                     minHeight: '450px',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center bottom',
@@ -434,7 +434,7 @@ function BannerCta() {
             <div
                 className="flex justify-end items-center text-center min-h-[270px] bg-cover rounded-[10px]"
                 style={{
-                    backgroundImage: `url("${'/nextjs-mbs/img/banner/cta-banner-1.png'}")`,
+                    backgroundImage: `url("${'/img/banner/cta-banner-1.png'}")`,
                     backgroundPosition: 'center bottom',
                 }}
             >
@@ -461,7 +461,7 @@ function BannerCta2() {
             <div
                 className="flex items-center min-h-[270px] bg-cover rounded-[10px]"
                 style={{
-                    backgroundImage: `url("${'/nextjs-mbs/img/banner/cta-banner-2.png'}")`,
+                    backgroundImage: `url("${'/img/banner/cta-banner-2.png'}")`,
                 }}
             >
                 <div className="p-8">
@@ -529,14 +529,14 @@ function PageHeaderBanner({ type, title, subtitle }: PageHeaderBannerProps) {
                     >
                         {type === 'corporate' ? (
                             <Image
-                                src="/nextjs-mbs/img/corporate.png"
+                                src="/img/corporate.png"
                                 alt="HexaDash Admin Template"
                                 width="195"
                                 height="175"
                             />
                         ) : (
                             <Image
-                                src="/nextjs-mbs/img/banner/header-banner.png"
+                                src="/img/banner/header-banner.png"
                                 alt="HexaDash Admin Template"
                                 width="195"
                                 height="175"

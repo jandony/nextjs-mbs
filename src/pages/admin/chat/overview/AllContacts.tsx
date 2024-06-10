@@ -73,7 +73,7 @@ const AllContacts = React.memo(() => {
                       <div className="ltr:mr-[15px] rtl:ml-[15px]">
                         <img
                           className="max-w-[46px] min-h-[46px] rounded-full"
-                          src={`/hexadash-nextjs/img/chat-author/${img}`}
+                          src={`/img/chat-author/${img}`}
                           alt=""
                         />
                         <span className={active ? 'active' : 'inactive'} />

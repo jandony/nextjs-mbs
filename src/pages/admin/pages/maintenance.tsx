@@ -7,7 +7,7 @@ function Maintenance() {
             <div className="flex justify-center items-center flex-col min-h-screen px-[15px] text-center">
                 <Image
                     className="mx-auto mb-[72px]"
-                    src="/nextjs-mbs/img/pages/maintenance.svg"
+                    src="/img/pages/maintenance.svg"
                     alt="maintenance"
                     width="402"
                     height="234"

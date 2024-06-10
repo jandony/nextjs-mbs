@@ -17,7 +17,7 @@ function GalleryCard({ item }: GalleryCardProps) {
             <figure className="bg-white dark:bg-white/10 rounded-10">
                 <img
                     style={{ width: '100%' }}
-                    src={`/nextjs-mbs/${img}`}
+                    src={`/${img}`}
                     alt=""
                 />
                 <figcaption>

@@ -16,7 +16,7 @@ function SampleCardFour({ item }: SampleCardProps) {
         <figure className="mb-0 bg-white dark:bg-white/10 rounded-10">
             <img
                 className="w-full rounded-t-10"
-                src={`/nextjs-mbs/${img}`}
+                src={`/${img}`}
                 alt=""
             />
             <figcaption className="p-[25px]">
@@ -34,7 +34,7 @@ function SampleCardFour({ item }: SampleCardProps) {
                     <div className="flex items-center text-theme-gray dark:text-white/60 gap-[10px]">
                         <img
                             className="w-[50px] rounded-full"
-                            src={'/nextjs-mbs/img/chat-author/t1.jpg'}
+                            src={'/img/chat-author/t1.jpg'}
                             alt=""
                         />
                         <span className="text-[14px] font-medium">

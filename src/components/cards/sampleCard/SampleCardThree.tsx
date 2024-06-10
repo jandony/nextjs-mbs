@@ -11,7 +11,7 @@ function SampleCardThree({ item }: SampleCardProps) {
     const { content, title, img } = item
     return (
         <figure className="mb-0 bg-white dark:bg-white/10 rounded-10 p-[25px] text-center">
-            <img className="inline-block" src={`/nextjs-mbs/${img}`} alt="" />
+            <img className="inline-block" src={`/${img}`} alt="" />
             <figcaption>
                 <h2 className="mb-[10px] mt-[18px] text-[23px] font-semibold text-dark dark:text-white/[.87]">
                     {title}

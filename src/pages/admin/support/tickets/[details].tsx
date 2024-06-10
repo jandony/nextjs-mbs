@@ -101,7 +101,7 @@ function SupportTicketDetails() {
       id,
       name: 'Daniel Pink',
       chat: inputValue,
-      img: '/hexadash-nextjs/img/users/2.png',
+      img: '/img/users/2.png',
       time: 'Just Now',
     });
 
@@ -170,7 +170,7 @@ function SupportTicketDetails() {
                     <div>
                       <h4 className="text-[14px] text-light dark:text-white/60 mb-[12px]">Requested By:</h4>
                       <div className="flex items-center mb-[30px] gap-[15px]">
-                        <img className="w-[30px] rounded-full" src={`/hexadash-nextjs/${dataState[0].user.img}`} alt="" />
+                        <img className="w-[30px] rounded-full" src={`/${dataState[0].user.img}`} alt="" />
                         <span className="text-[14px] font-medium text-theme-gray dark:text-white/60">
                           {dataState[0].user.name}
                         </span>
@@ -229,7 +229,7 @@ function SupportTicketDetails() {
                     <List.Item className="p-0 border-none mb-[28px] last:mb-[0]" key={item.email}>
                       <List.Item.Meta
                         className="p-0 border-none"
-                        avatar={<Avatar shape="circle" src={`/hexadash-nextjs/${item.img}`} />}
+                        avatar={<Avatar shape="circle" src={`/${item.img}`} />}
                         title={
                           <Link className="text-dark dark:text-white/[.87] text-[14px] font-medium" href="#">
                             {item.name}
@@ -297,7 +297,7 @@ function SupportTicketDetails() {
                         <div>
                           <img
                             className="w-[40px] h-[40px]"
-                            src={`/hexadash-nextjs/img/files/${file.type}.png`}
+                            src={`/img/files/${file.type}.png`}
                             alt="File Logo"
                           />
                         </div>

@@ -45,7 +45,7 @@ const MessageBox = React.memo((props: any) => {
                                 <figure className="inline-flex w-full mb-0 align-top sm:gap-[10px]">
                                     <Image
                                         className="h-[40px] min-w-[40px] rounded-full object-cover"
-                                        src={`/nextjs-mbs/${
+                                        src={`/${
                                             message.img
                                                 ? message.img
                                                 : 'img/avatar/app-developer.png'
@@ -97,7 +97,9 @@ const MessageBox = React.memo((props: any) => {
                 >
                     <ReactSVG
                         className="text-[#a0a0a0] dark:text-white/60"
-                        src="/nextjs-mbs/img/icon/envelope.svg"
+                        src="/img/icon/envelope.svg"
+                        height={4}
+                        width={4}
                     />
                 </Link>
             </PopOver>
