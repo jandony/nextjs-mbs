@@ -3,6 +3,8 @@ import { Spin } from 'antd'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import NotFoundSVG from '../../public/img/pages/404.svg';
+
 import Heading from '@/components/heading'
 import { Buttons } from '@/components/buttons'
 
@@ -26,7 +28,7 @@ function NotFound() {
                 <div className="flex justify-center items-center flex-col min-h-screen pb-36 px-[15px] text-center">
                     <Image
                         className="mx-auto mb-20"
-                        src={`/nextjs-mbs/img/pages/404.svg`}
+                        src={NotFoundSVG}
                         alt="404"
                         width="400"
                         height="315"
@@ -40,11 +42,11 @@ function NotFound() {
                     <p className="text-body dark:text-white/60 mb-6 text-lg xs:text-base font-medium">
                         Sorry! the page you are looking for does not exist.
                     </p>
-                    <Link href="/admin">
+                    <Link href="/">
                         <Buttons
                             size="default"
                             type="primary"
-                            to="/admin"
+                            to="/"
                             className="bg-primary text-white h-11"
                         >
                             Return Home

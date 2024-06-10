@@ -3,7 +3,9 @@ import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useSelector } from 'react-redux'
 
-import backgroundImage from '../../public/img/admin-bg-light.png'
+import backgroundImage from '../../public/img/admin-bg-light.png';
+import logoDark from '../../public/img/logo_dark.svg';
+import logoWhite from '../../public/img/logo_white.svg';
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
     interface RootState {
@@ -24,7 +26,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
         // If the user is logged in and trying to access a authentication page, redirect to the admin page
         if (
             isLoggedIn &&
-            (router.pathname == '/' ||
+            (
                 router.pathname.startsWith('/login') ||
                 router.pathname.startsWith('/register') ||
                 router.pathname.startsWith('/forgot-password'))
@@ -44,14 +46,14 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
                 <div className="flex justify-center">
                     <Image
                         className="dark:hidden"
-                        src="/nextjs-mbs/img/logo_dark.svg"
+                        src={logoDark}
                         alt="Logo Dark"
                         width="140"
                         height="32"
                     />
                     <Image
                         className="hidden dark:block"
-                        src="/nextjs-mbs/img/logo_white.svg"
+                        src={logoWhite}
                         alt="Logo"
                         width="140"
                         height="32"

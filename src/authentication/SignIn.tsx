@@ -8,6 +8,8 @@ import { ReactSVG } from 'react-svg'
 import { UilFacebook, UilTwitter, UilGithub } from '@iconscout/react-unicons'
 import { CheckBox } from '@/components/checkbox'
 
+import GooglePlus from '../../public/img/icon/google-plus.svg';
+
 import { useUser } from '@auth0/nextjs-auth0/client'
 import { useAuth } from './AuthContext'
 
@@ -178,7 +180,7 @@ function SignIn() {
                                     >
                                         <ReactSVG
                                             className="[&>div>svg>path]:fill-google-plus group-hover:[&>div>svg>path]:fill-white"
-                                            src="/nextjs-mbs/img/icon/google-plus.svg"
+                                            src={GooglePlus}
                                         />
                                     </Link>
                                 </li>

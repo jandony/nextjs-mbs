@@ -211,7 +211,7 @@ function SignUp() {
                         <p className="mb-0 text-sm font-medium text-body dark:text-white/60">
                             Already have an account?
                             <Link
-                                href="/"
+                                href="/login"
                                 className="ltr:ml-1.5 rtl:mr-1.5 text-info hover:text-primary"
                             >
                                 Sign In

@@ -46,7 +46,7 @@ function ForgotPassword() {
             <div className="p-6 text-center bg-section dark:bg-white/10 rounded-b-md">
               <p className="mb-0 text-sm font-medium text-body dark:text-white/60">
                 Return to
-                <Link href="/" className="ltr:ml-1.5 rtl:mr-1.5 text-info hover:text-primary">
+                <Link href="/login" className="ltr:ml-1.5 rtl:mr-1.5 text-info hover:text-primary">
                   Sign In
                 </Link>
               </p>

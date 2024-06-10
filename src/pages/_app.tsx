@@ -9,15 +9,15 @@ import AuthLayout from './authLayout'
 import { wrapper, store } from '../redux/store'
 import '../i18n/config'
 
-import { AuthContextProvider } from '../authentication/AuthContext'
+import { AuthContextProvider } from '../authentication/AuthContext';
+import MainLayout from './mainLayout'
 
 function App({ Component, pageProps }: AppProps) {
-    const router = useRouter()
-    const { pathname } = router
+    const router = useRouter();
+    const { pathname } = router;
 
     const renderLayout = () => {
         if (
-            pathname == '/' ||
             pathname.startsWith('/register') ||
             pathname.startsWith('/forgotPassword') ||
             pathname.startsWith('/login')
@@ -30,8 +30,8 @@ function App({ Component, pageProps }: AppProps) {
                         </AuthLayout>
                     </AuthContextProvider>
                 </UserProvider>
-            )
-        } else {
+            );
+        } else if ( pathname.startsWith('/admin') ) {
             return (
                 <UserProvider profileUrl="/nextjs-mbs/api/auth/me">
                     <AuthContextProvider>
@@ -41,6 +41,14 @@ function App({ Component, pageProps }: AppProps) {
                     </AuthContextProvider>
                 </UserProvider>
             )
+        } else {
+            return (
+                <UserProvider>
+                    <MainLayout>
+                        <Component {...pageProps} />
+                    </MainLayout>
+                </UserProvider>
+            );
         }
     }
 
@@ -51,4 +59,4 @@ function App({ Component, pageProps }: AppProps) {
     )
 }
 
-export default wrapper.withRedux(App)
+export default wrapper.withRedux(App);
