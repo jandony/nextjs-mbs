@@ -108,18 +108,19 @@ const HeaderTop = () => {
                             ) : null}
                         </div>
                     </div>
-                    <div className="flex items-center justify-between flex-auto ltr:mr-[10px] rtl:ml-[10px] [&>div:first-child]:flex [&>div]:items-center ">
+                    <div className="flex items-center justify-between flex-auto ltr:mr-[10px] rtl:ml-[10px] [&>div:first-child]:flex [&>div]:items-center">
                         {isBrowser && window.innerWidth > 1200 && topMenu ? (
                             <TopMenu />
                         ) : (
-                            <Customizer rtl={rtl} />
+                            // <Customizer rtl={rtl} />
+                            null
                         )}
-                        <div className="flex flex-row items-center md:hidden me-[17px]">
+                        <div className="flex flex-row items-center md:hidden me-[17px] ml-auto">
                             {isBrowser &&
                             window.innerWidth > 1200 &&
                             topMenu ? (
                                 <div className="flex top-right-wrap">
-                                    <Customizer rtl={rtl} />
+                                    {/* <Customizer rtl={rtl} /> */}
                                     <AuthInfo rtl={rtl} />
                                 </div>
                             ) : (

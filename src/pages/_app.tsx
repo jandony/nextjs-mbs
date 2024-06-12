@@ -11,6 +11,8 @@ import '../i18n/config'
 
 import { AuthContextProvider } from '../authentication/AuthContext';
 import MainLayout from './mainLayout'
+import { useEffect, useState } from 'react'
+import { MainContextProvider } from '@/context/MainContext'
 
 function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
@@ -44,9 +46,11 @@ function App({ Component, pageProps }: AppProps) {
         } else {
             return (
                 <UserProvider>
-                    <MainLayout>
-                        <Component {...pageProps} />
-                    </MainLayout>
+                    <MainContextProvider>
+                        <MainLayout>
+                            <Component {...pageProps} />
+                        </MainLayout>
+                    </MainContextProvider>
                 </UserProvider>
             );
         }

@@ -2,7 +2,13 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['lh3.googleusercontent.com'],
+        domains: [
+            'lh3.googleusercontent.com',
+            'astroship-pro.web3templates.com',
+            'via.placeholder.com',
+            'images.unsplash.com',
+            'plus.unsplash.com',
+        ],
     },
 }
 
