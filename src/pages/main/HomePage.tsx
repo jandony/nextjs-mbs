@@ -28,14 +28,14 @@ export default function HomeComponents() {
             />
 
             <Logos />
-            
-            <Callout 
+
+            <Callout
                 tag={<>Two-Col Feature</>}
                 title={<>Supercharge Your Workflows</>}
                 subtitle={<>Unlock your team's true potential with our state-of-the-art SaaS platform. From intelligent task management to real-time collaboration and top-notch data security, we have everything you need to streamline your workflows and achieve high productivity.</>}
             />
 
-            <ImageText 
+            <ImageText
                 tag={<>Simplified Workflows</>}
                 title={<>Create websites with AstroShip</>}
                 subtitle={<>Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS.</>}
@@ -54,12 +54,12 @@ export default function HomeComponents() {
                 ]}
             />
 
-            <ServiceCards 
+            <ServiceCards
                 title={<>A technology-first approach</>}
                 subtitle={<>A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</>}
             />
 
-            <IconList 
+            <IconList
                 tag={<>More Features</>}
                 title={<>We've got you covered</>}
                 subtitle={<>Our template covers all things SAAS. If you don't find what you're looking for, contact us and we'll either help you or steer you in the right direction.</>}

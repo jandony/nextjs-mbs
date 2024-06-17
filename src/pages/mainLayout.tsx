@@ -21,11 +21,11 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
         setIsModalOpen(true);
-      };
-    
-      const closeModal = () => {
+    };
+
+    const closeModal = () => {
         setIsModalOpen(false);
-      };
+    };
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -35,7 +35,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                     <Link href='/'>
                         <Image alt="Logo" loading="lazy" width={120} height={20} className="w-full max-w-[120px] xs:max-w-[100px]" src={`${isDarkMode ? LogoWhite : LogoDark}`} />
                     </Link>
-                    
+
                     <div className="flex items-center gap-6">
                         <nav className="flex md:hidden items-center gap-6 dark:text-white/60">
                             <Link href='/' className={`${pathname === '/' && 'text-primary'}`}>Home</Link>
@@ -45,7 +45,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                         </nav>
                         <div className="flex items-center gap-6 md:gap-2 md:border-0 border-l px-6 md:px-4">
                             <Link href='/register'>
-                                <Buttons 
+                                <Buttons
                                     size="default"
                                     type="primary"
                                     shape="round"
@@ -55,19 +55,19 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                                 onClick={toggleDarkMode}
                                 type="ghost"
                                 className="bg-slate-100 text-gray-600 hover:text-yellow-600 rounded-full p-3 h-auto border border-gray-300 hover:-rotate-90 dark:bg-slate-900 dark:border-slate-600 dark:text-slate-400 dark:hover:text-yellow-600">
-                                    {isDarkMode ? <FaSun className='text-lg' /> : <FaMoon className="text-lg"/>}
+                                {isDarkMode ? <FaSun className='text-lg' /> : <FaMoon className="text-lg" />}
                             </Buttons>
                             <Buttons
                                 onClick={showModal}
                                 type="ghost"
                                 className="md:block hidden text-gray-600 dark:text-slate-400">
-                                    <RxHamburgerMenu className='text-2xl' />
+                                <RxHamburgerMenu className='text-2xl' />
                             </Buttons>
                         </div>
                     </div>
 
                     {/* Mobile Menu */}
-                    <Modal 
+                    <Modal
                         open={isModalOpen}
                         onCancel={closeModal}
                         footer=""
@@ -118,7 +118,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                         <p className="py-2 dark:text-white/60">Developed by Jeffrey Andony</p>
                     </div>
                     <div className="md:flex-col flex justify-around w-full md:w-2/3 p-4 md:gap-10">
-                        <div className="flex flex-col gap-4"> 
+                        <div className="flex flex-col gap-4">
                             <p className="font-semibold text-lg dark:text-white">Company</p>
                             <div className="flex flex-col gap-4 dark:text-white/60">
                                 <Link href="#">About</Link>
