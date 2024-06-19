@@ -188,17 +188,17 @@ const ContactLayout = ({ children }: { children: React.ReactNode }) => {
                 </Buttons>
             </div>
 
-            <main className="min-h-[715px] lg:min-h-[580px] bg-transparent px-[30px] ssm:px-[15px]  pb-[20px]">
+            <main className="min-h-[715px] lg:min-h-[580px] bg-transparent px-[30px] ssm:px-[15px] pb-[20px]">
                 <Row gutter={25}>{children}</Row>
 
                 <Modals
                     type={state.modalType}
-                    title="Contact Information"
+                    title={<div className="text-lg py-4 border-b mx-6">Contact Information</div>}
                     visible={state.visible}
                     footer={null}
                     onCancel={handleCancel}
                 >
-                    <div className="px-1.5">
+                    <div className="px-6 pb-6">
                         <Form form={form} name="contact" onFinish={handleOk}>
                             <Form.Item
                                 label="Name"

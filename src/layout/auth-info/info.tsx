@@ -18,6 +18,7 @@ import Message from './Message'
 import Notification from './Notification'
 import Settings from './settings'
 import { logOutAction } from '@/redux/authentication/actionCreator'
+import { changeLayoutMode } from '../../redux/themeLayout/actionCreator';
 
 import { useUser } from '@auth0/nextjs-auth0/client'
 import { useAuth } from '@/authentication/AuthContext'
@@ -25,8 +26,39 @@ import { useAuth } from '@/authentication/AuthContext'
 import PopOver from '@/components/popup'
 import Heading from '@/components/heading'
 import DropDown from '@/components/dropdown'
+import { Buttons } from '@/components/buttons'
+import { FaMoon, FaSun } from 'react-icons/fa'
 
 const AuthInfo = React.memo((props: any) => {
+    const tempUser = {
+        name: "John Doe",
+        role: "UI/UX Designer",
+        image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    }
+
+    interface RootState {
+        ChangeLayoutMode: {
+            topMenu: string;
+        }
+    }
+
+    const changeLayout = (mode: string) => {
+        //@ts-ignore
+        dispatch(changeLayoutMode(mode));
+    };
+
+    const [isDarkMode, setDarkMode] = useState(false);
+    // Function to toggle dark mode
+    const toggleDarkMode = () => {
+        const bodyDocument = document.body;
+        bodyDocument.classList.toggle('dark');
+        setDarkMode(prevMode => !prevMode);
+
+        let darkMode = isDarkMode ? 'lightMode' : 'darkMode';
+
+        changeLayout(darkMode);
+    };
+
     const router = useRouter()
     const [state, setState] = useState({
         flag: 'en',
@@ -66,7 +98,7 @@ const AuthInfo = React.memo((props: any) => {
                         className="rounded-full ltr:mr-4 rtl:ml-4"
                         src={
                             user?.picture ??
-                            '/img/avatar/chat-auth.png'
+                            tempUser.image
                         }
                         alt=""
                         width="50"
@@ -80,18 +112,19 @@ const AuthInfo = React.memo((props: any) => {
                             {user
                                 ? user.name
                                 : currentUser
-                                ? currentUser.displayName
-                                : 'Abdullah Bin Talha'}
+                                    // ? currentUser.displayName
+                                    ? tempUser.name
+                                    : 'Abdullah Bin Talha'}
                         </Heading>
                         <p className="mb-0 text-xs text-body dark:text-white/60">
-                            UI Expert
+                            {user ? user.name : tempUser.role}
                         </p>
                     </figcaption>
                 </figure>
                 <ul className="mb-[10px]">
                     <li>
                         <Link
-                            href="#"
+                            href="/admin/profile/overview"
                             className="inline-flex items-center hover:bg-primary/[.05] rounded-4 text-light dark:text-white/60 dark:hover:text-white hover:text-primary dark:hover:bg-white/10 dark:rounded-4 hover:pl-6 w-full px-2.5 py-3 text-sm transition-all ease-in-out delay-150"
                         >
                             <UilUser className="w-4 h-4 ltr:mr-3 rtl:ml-3" />{' '}
@@ -100,7 +133,7 @@ const AuthInfo = React.memo((props: any) => {
                     </li>
                     <li>
                         <Link
-                            href="#"
+                            href="/admin/pages/settings"
                             className="inline-flex items-center hover:bg-primary/[.05] rounded-4 text-light dark:text-white/60 dark:hover:text-white hover:text-primary dark:hover:bg-white/10 dark:rounded-4 hover:pl-6 w-full px-2.5 py-3 text-sm transition-all ease-in-out delay-150"
                         >
                             <UilSetting className="w-4 h-4 ltr:mr-3 rtl:ml-3" />{' '}
@@ -138,7 +171,7 @@ const AuthInfo = React.memo((props: any) => {
                 <Link
                     onClick={handleLogout}
                     href={user ? '/api/auth/logout' : '#'}
-                    className="flex items-center justify-center text-sm font-medium bg-[#f4f5f7] dark:bg-[#32333f] h-[50px] text-light hover:text-primary dark:hover:text-white/60 dark:text-white/[.87] mx-[-12px] mb-[-15px] rounded-b-6"
+                    className="flex items-center justify-center text-sm font-medium bg-[#f4f5f7] dark:bg-[#32333f] h-[50px] text-light hover:text-primary dark:hover:text-white/60 dark:text-white/[.87] rounded-b-6"
                 >
                     <UilSignout className="w-4 h-4 ltr:mr-3 rtl:ml-3" /> Sign
                     Out
@@ -240,6 +273,12 @@ const AuthInfo = React.memo((props: any) => {
                     </Link>
                 </DropDown>
             </div>
+            <Buttons
+                onClick={toggleDarkMode}
+                type="ghost"
+                className="bg-slate-100 text-gray-600 hover:text-yellow-600 rounded-full p-3 h-auto border border-gray-300 hover:-rotate-90 dark:bg-slate-900 dark:border-slate-600 dark:text-slate-400 dark:hover:text-yellow-600">
+                {isDarkMode ? <FaSun className='text-lg' /> : <FaMoon className="text-lg" />}
+            </Buttons>
             <div className="flex">
                 <PopOver
                     placement="bottomRight"
@@ -253,7 +292,7 @@ const AuthInfo = React.memo((props: any) => {
                         <Image
                             src={
                                 user?.picture ??
-                                '/img/avatar/matureman1.png'
+                                'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                             }
                             alt="Avatar"
                             width="32"
@@ -264,8 +303,9 @@ const AuthInfo = React.memo((props: any) => {
                             {user
                                 ? user.name
                                 : currentUser
-                                ? currentUser.displayName
-                                : 'Abdullah Bin Talha'}
+                                    // ? currentUser.displayName
+                                    ? tempUser.name
+                                    : 'Abdullah Bin Talha'}
                         </span>
                         <UilAngleDown className="w-4 h-4 min-w-[16px]" />
                     </Link>

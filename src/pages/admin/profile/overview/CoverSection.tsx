@@ -35,7 +35,7 @@ function CoverSection() {
                 {...props}
                 className="absolute border border-white rounded-md top-5 ltr:right-5 rtl:left-5 lg:top-1/2 lg:ltr:right-1/2 lg:rtl:left-1/2 lg:-translate-y-1/2 lg:ltr:translate-x-1/2 lg:rtl:-translate-x-1/2 border-opacity-30"
             >
-                <Link href="#" className="flex items-center px-4 xs:px-3 py-2 text-white gap-[8px]">
+                <Link href="" className="flex items-center px-4 xs:px-3 py-2 text-white gap-[8px]">
                     <UilCamera className="w-4 h-4" /> Change Cover
                 </Link>
             </Upload>

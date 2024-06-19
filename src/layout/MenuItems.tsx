@@ -1,47 +1,47 @@
 import {
-  Uil500px,
-  UilAirplay,
-  UilArrowGrowth,
-  UilAt,
-  UilBagAlt,
-  UilBookAlt,
-  UilBookOpen,
-  UilBookReader,
-  UilCalendarAlt,
-  UilChartBar,
-  UilChat,
-  UilCheckSquare,
-  UilCircle,
-  UilClipboardAlt,
-  UilClock,
-  UilCompactDisc,
-  UilCreateDashboard,
-  UilDatabase,
-  UilDocumentLayoutLeft,
-  UilEdit,
-  UilEnvelope,
-  UilExchange,
-  UilExclamationOctagon,
-  UilExpandArrowsAlt,
-  UilFile,
-  UilFileShieldAlt,
-  UilHeadphones,
-  UilIcons,
-  UilImages,
-  UilLayerGroup,
-  UilMap,
-  UilPresentation,
-  UilQuestionCircle,
-  UilSearch,
-  UilServer,
-  UilSetting,
-  UilShoppingCart,
-  UilSquareFull,
-  UilTable,
-  UilUsdCircle,
-  UilUsersAlt,
-  UilWindowSection,
-  UilEllipsisV,
+    Uil500px,
+    UilAirplay,
+    UilArrowGrowth,
+    UilAt,
+    UilBagAlt,
+    UilBookAlt,
+    UilBookOpen,
+    UilBookReader,
+    UilCalendarAlt,
+    UilChartBar,
+    UilChat,
+    UilCheckSquare,
+    UilCircle,
+    UilClipboardAlt,
+    UilClock,
+    UilCompactDisc,
+    UilCreateDashboard,
+    UilDatabase,
+    UilDocumentLayoutLeft,
+    UilEdit,
+    UilEnvelope,
+    UilExchange,
+    UilExclamationOctagon,
+    UilExpandArrowsAlt,
+    UilFile,
+    UilFileShieldAlt,
+    UilHeadphones,
+    UilIcons,
+    UilImages,
+    UilLayerGroup,
+    UilMap,
+    UilPresentation,
+    UilQuestionCircle,
+    UilSearch,
+    UilServer,
+    UilSetting,
+    UilShoppingCart,
+    UilSquareFull,
+    UilTable,
+    UilUsdCircle,
+    UilUsersAlt,
+    UilWindowSection,
+    UilEllipsisV,
 } from '@iconscout/react-unicons';
 import React, { useState, useEffect } from 'react';
 import { Menu } from 'antd';
@@ -59,15 +59,15 @@ function MenuItems() {
     const { t } = useTranslation();
 
     interface RootState {
-      ChangeLayoutMode: {
-        topMenu: string;
-      }
+        ChangeLayoutMode: {
+            topMenu: string;
+        }
     }
 
-    const { topMenu } = useSelector((state:RootState) => {
-      return {
-        topMenu: state.ChangeLayoutMode.topMenu,
-      };
+    const { topMenu } = useSelector((state: RootState) => {
+        return {
+            topMenu: state.ChangeLayoutMode.topMenu,
+        };
     });
 
     const router = useRouter();
@@ -77,76 +77,76 @@ function MenuItems() {
     const mainPathSplit = mainPath.split('/');
 
     const [openKeys, setOpenKeys] = React.useState(
-      !topMenu ? [`${mainPathSplit.length > 2 ? mainPathSplit[1] : 'dashboard'}`] : [],
+        !topMenu ? [`${mainPathSplit.length > 2 ? mainPathSplit[1] : 'dashboard'}`] : [],
     );
     const [openItems, setOpenItems] = React.useState(
-      !topMenu ? [ `${ mainPathSplit.length === 1 ? 'demo-1' : mainPathSplit.length === 2 ? mainPathSplit[1] : mainPathSplit[2] }`, ] : []
+        !topMenu ? [`${mainPathSplit.length === 1 ? 'demo-1' : mainPathSplit.length === 2 ? mainPathSplit[1] : mainPathSplit[2]}`,] : []
     );
 
     useEffect(() => {
-      // Check if the current route matches the base path.
-      if (pathname === path) {
-        setOpenKeys(['dashboard']); // active menu key.
-        setOpenItems(['demo-1']); // active menu item.
-      }
+        // Check if the current route matches the base path.
+        if (pathname === path) {
+            setOpenKeys(['dashboard']); // active menu key.
+            setOpenItems(['demo-1']); // active menu item.
+        }
     }, [pathname]);
 
-    const onOpenChange = (keys:string[]) => {
-      setOpenKeys(keys[keys.length - 1] !== 'recharts' && keys.length > 0 ? [keys[keys.length - 1]] : keys);
+    const onOpenChange = (keys: string[]) => {
+        setOpenKeys(keys[keys.length - 1] !== 'recharts' && keys.length > 0 ? [keys[keys.length - 1]] : keys);
     };
 
-    const onClick = (item:any) => {
-      setOpenItems([item.key])
-      if (item.keyPath.length === 1) setOpenKeys([]);
+    const onClick = (item: any) => {
+        setOpenItems([item.key])
+        if (item.keyPath.length === 1) setOpenKeys([]);
     };
 
     const dispatch = useDispatch();
 
-    const changeNavbar = (topMode:boolean) => {
-        const html:HTMLElement | null = document.querySelector('html');
+    const changeNavbar = (topMode: boolean) => {
+        const html: HTMLElement | null = document.querySelector('html');
         if (html) {
-          if (topMode) {
-            html.classList.add('hexadash-topmenu');
-          } else {
-            html.classList.remove('hexadash-topmenu');
-          }
+            if (topMode) {
+                html.classList.add('hexadash-topmenu');
+            } else {
+                html.classList.remove('hexadash-topmenu');
+            }
         }
         //@ts-ignore
         dispatch(changeMenuMode(topMode));
     };
 
-    const changeLayoutDirection = (rtlMode:boolean) => {
+    const changeLayoutDirection = (rtlMode: boolean) => {
         if (rtlMode) {
-          const html:HTMLElement | null = document.querySelector('html');
-          
-          if (html) {
-            html.setAttribute('dir', 'rtl');
-          }
-        } else {
-          const html:HTMLElement | null = document.querySelector('html');
+            const html: HTMLElement | null = document.querySelector('html');
 
-          if(html) {
-            html.setAttribute('dir', 'ltr');
-          }
+            if (html) {
+                html.setAttribute('dir', 'rtl');
+            }
+        } else {
+            const html: HTMLElement | null = document.querySelector('html');
+
+            if (html) {
+                html.setAttribute('dir', 'ltr');
+            }
         }
         //@ts-ignore
         dispatch(changeDirectionMode(rtlMode));
     };
-    
-    const changeLayout = (mode:string) => {
-      //@ts-ignore
+
+    const changeLayout = (mode: string) => {
+        //@ts-ignore
         dispatch(changeLayoutMode(mode));
     };
 
     const darkmodeActivated = () => {
-      document.body.classList.add('dark');
-    };
-  
-    const darkmodeDiactivated = () => {
-      document.body.classList.remove('dark');
+        document.body.classList.add('dark');
     };
 
-    function getItem( label:React.ReactNode, key:string, icon:any, children:any) {
+    const darkmodeDiactivated = () => {
+        document.body.classList.remove('dark');
+    };
+
+    function getItem(label: React.ReactNode, key: string, icon: any, children: any) {
         return {
             label,
             key,
@@ -156,15 +156,77 @@ function MenuItems() {
     }
 
     const items = [
-        // getItem(t('dashboard'), 'dashboard', !topMenu && <UilCreateDashboard />),
         getItem(
             <Link href={`${path}`}>
-              {t('dashboard')}
+                {t('dashboard')}
             </Link>,
             'demo-1',
             !topMenu && <UilCreateDashboard />,
             null,
-          ),
+        ),
+        getItem(
+            <Link href={`${path}/profile/activity`}>
+                {t('Activity')}
+            </Link>,
+            'activity',
+            !topMenu && <UilUsersAlt />,
+            null,
+        ),
+        getItem(t('Contacts'), 'contact', !topMenu && <UilAt />, [
+            getItem(
+                <Link href={`${path}/contact/grid`}>
+                    {t('All Contacts')} {t('(grid)')}
+                </Link>,
+                'contact-grid',
+                null,
+                null,
+            ),
+            getItem(
+                <Link href={`${path}/contact/list`}>
+                    {t('All Contacts')} {t('(list)')}
+                </Link>,
+                'contact-list',
+                null,
+                null,
+            ),
+        ]),
+        // getItem(
+        //     !topMenu && (
+        //         <p className="flex text-[12px] font-medium uppercase text-theme-gray mt-[20px] dark:text-white/60 pe-[15px]">
+        //             {t('application')}
+        //         </p>
+        //     ),
+        //     'app-title',
+        //     null,
+        //     null,
+        // ),
+        // getItem(`${t('social')} ${t('app')}`, 'profile', !topMenu && <Uil500px />, [
+        //     getItem(
+        //         <Link href={`${path}/profile/myProfile/overview`}>
+        //             {t('my')} {t('profile')}
+        //         </Link>,
+        //         'myProfile',
+        //         null,
+        //         null,
+        //     ),
+        //     getItem(
+        //         <Link href={`${path}/profile/myProfile/timeline`}>
+        //             {t('timeline')}
+        //         </Link>,
+        //         'profileTimeline',
+        //         null,
+        //         null,
+        //     ),
+        //     getItem(
+        //         <Link href={`${path}/profile/myProfile/activity`}>
+        //             {t('activity')}
+        //         </Link>,
+        //         'profileActivity',
+        //         null,
+        //         null,
+        //     ),
+        // ]),
+        // getItem(t('dashboard'), 'dashboard', !topMenu && <UilCreateDashboard />),
         // getItem(t('dashboard'), 'dashboard', !topMenu && <UilCreateDashboard />, [
         //   getItem(
         //     <Link href={`${path}`}>
@@ -183,88 +245,88 @@ function MenuItems() {
         //     null,
         //   ),
         // ]),
-        getItem(t('layouts'), 'layout', !topMenu && <UilWindowSection />, [
-          getItem(
-            <Link
-              onClick={() => {
-                darkmodeDiactivated();
-                changeLayout('lightMode');
-              }}
-              href="#"
-            >
-              {t('light')} {t('mode')}
-            </Link>,
-            'light',
-            null,
-            null,
-          ),
-          getItem(
-            <Link
-              onClick={() => {
-                darkmodeActivated();
-                changeLayout('darkMode');
-              }}
-              href="#"
-            >
-              {t('dark')} {t('mode')}
-            </Link>,
-            'dark',
-            null,
-            null,
-          ),
-          getItem(
-            <Link
-              onClick={() => {
-                changeNavbar(true);
-              }}
-              href="#"
-            >
-              {t('top')} {t('menu')}
-            </Link>,
-            'topMenu',
-            null,
-            null,
-          ),
-          getItem(
-            <Link
-              onClick={() => {
-                changeNavbar(false);
-              }}
-              href="#"
-            >
-              {t('side')} {t('menu')}
-            </Link>,
-            'sideMenu',
-            null,
-            null,
-          ),
-          getItem(
-            <Link
-              onClick={() => {
-                changeLayoutDirection(true);
-              }}
-              href="#"
-            >
-              RTL
-            </Link>,
-            'rtl',
-            null,
-            null,
-          ),
-          getItem(
-            <Link
-              onClick={() => {
-                changeLayoutDirection(false);
-              }}
-              href="#"
-            >
-              LTR
-            </Link>,
-            'ltr',
-            null,
-            null,
-          ),
-        ]),
+        // getItem(t('layouts'), 'layout', !topMenu && <UilWindowSection />, [
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         darkmodeDiactivated();
+        //         changeLayout('lightMode');
+        //       }}
+        //       href="#"
+        //     >
+        //       {t('light')} {t('mode')}
+        //     </Link>,
+        //     'light',
+        //     null,
+        //     null,
+        //   ),
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         darkmodeActivated();
+        //         changeLayout('darkMode');
+        //       }}
+        //       href="#"
+        //     >
+        //       {t('dark')} {t('mode')}
+        //     </Link>,
+        //     'dark',
+        //     null,
+        //     null,
+        //   ),
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         changeNavbar(true);
+        //       }}
+        //       href="#"
+        //     >
+        //       {t('top')} {t('menu')}
+        //     </Link>,
+        //     'topMenu',
+        //     null,
+        //     null,
+        //   ),
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         changeNavbar(false);
+        //       }}
+        //       href="#"
+        //     >
+        //       {t('side')} {t('menu')}
+        //     </Link>,
+        //     'sideMenu',
+        //     null,
+        //     null,
+        //   ),
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         changeLayoutDirection(true);
+        //       }}
+        //       href="#"
+        //     >
+        //       RTL
+        //     </Link>,
+        //     'rtl',
+        //     null,
+        //     null,
+        //   ),
+        //   getItem(
+        //     <Link
+        //       onClick={() => {
+        //         changeLayoutDirection(false);
+        //       }}
+        //       href="#"
+        //     >
+        //       LTR
+        //     </Link>,
+        //     'ltr',
+        //     null,
+        //     null,
+        //   ),
+        // ]),
         // getItem(
         //   <Link href={`${path}/pages/changelog`}>
         //     {t('changelog')}
@@ -274,16 +336,6 @@ function MenuItems() {
         //   !topMenu && <UilArrowGrowth />,
         //   null,
         // ),
-        getItem(
-          !topMenu && (
-            <p className="flex text-[12px] font-medium uppercase text-theme-gray mt-[20px] dark:text-white/60 pe-[15px]">
-              {t('application')}
-            </p>
-          ),
-          'app-title',
-          null,
-          null,
-        ),
         // getItem(t('email'), 'email', !topMenu && <UilEnvelope />, [
         //   getItem(
         //     <Link href={`${path}/email/inbox`}>
@@ -380,32 +432,6 @@ function MenuItems() {
         //     null,
         //   ),
         // ]),
-        getItem(`${t('social')} ${t('app')}`, 'profile', !topMenu && <Uil500px />, [
-          getItem(
-            <Link href={`${path}/profile/myProfile/overview`}>
-              {t('my')} {t('profile')}
-            </Link>,
-            'myProfile',
-            null,
-            null,
-          ),
-          getItem(
-            <Link href={`${path}/profile/myProfile/timeline`}>
-              {t('timeline')}
-            </Link>,
-            'profileTimeline',
-            null,
-            null,
-          ),
-          getItem(
-            <Link href={`${path}/profile/myProfile/activity`}>
-              {t('activity')}
-            </Link>,
-            'profileActivity',
-            null,
-            null,
-          ),
-        ]),
         // getItem(t('project'), 'project', !topMenu && <UilBagAlt />, [
         //   getItem(
         //     <Link href={`${path}/project/grid`}>
@@ -440,32 +466,6 @@ function MenuItems() {
         //     null,
         //   ),
         // ]),
-        getItem(t('contact'), 'contact', !topMenu && <UilAt />, [
-          getItem(
-            <Link href={`${path}/contact/grid`}>
-              {t('contact')} {t('grid')}
-            </Link>,
-            'contact-grid',
-            null,
-            null,
-          ),
-          getItem(
-            <Link href={`${path}/contact/list`}>
-              {t('contact')} {t('list')}
-            </Link>,
-            'contact-list',
-            null,
-            null,
-          ),
-          getItem(
-            <Link href={`${path}/contact/addNew`}>
-              {t('contact')} {t('create')}
-            </Link>,
-            'addNew',
-            null,
-            null,
-          ),
-        ]),
         // getItem(t('support'), 'supports', !topMenu && <UilHeadphones />, [
         //   getItem(
         //     <Link href={`${path}/support/tickets`}>
@@ -1146,26 +1146,26 @@ function MenuItems() {
         //   ),
         // ]),
         getItem(
-          !topMenu && (
-            <p className="flex text-[12px] font-medium uppercase text-theme-gray mt-[20px] dark:text-white/60 pe-[15px]">
-              {t('Pages')}
-            </p>
-          ),
-          'page-title',
-          null,
-          null,
+            !topMenu && (
+                <p className="flex text-[12px] font-medium uppercase text-theme-gray mt-[20px] dark:text-white/60 pe-[15px]">
+                    {t('Pages')}
+                </p>
+            ),
+            'page-title',
+            null,
+            null,
         ),
         getItem(
-          <Link href={`${path}/pages/settings`}>
-            {t('Settings')}
-          </Link>,
-          'settings',
-          !topMenu && (
-            <Link className="menuItem-icon" href={`${path}/pages/settings`}>
-              <UilSetting />
-            </Link>
-          ),
-          null,
+            <Link href={`${path}/pages/settings`}>
+                {t('Settings')}
+            </Link>,
+            'settings',
+            !topMenu && (
+                <Link className="menuItem-icon" href={`${path}/pages/settings`}>
+                    <UilSetting />
+                </Link>
+            ),
+            null,
         ),
         // getItem(t('gallery'), 'gallery', !topMenu && <UilImages />, [
         //   getItem(

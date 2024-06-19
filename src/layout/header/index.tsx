@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { UilEllipsisV } from '@iconscout/react-unicons'
+import { GiHamburgerMenu } from "react-icons/gi";
 import Customizer from '../customizer'
 import TopMenu from '@/layout/TopMenu'
 import Search from '@/layout/auth-info/Search'
@@ -13,7 +14,6 @@ import { changeMenuCollapse } from '@/redux/themeLayout/actionCreator'
 
 import DarkLogo from '../../../public/img/logo_dark.svg';
 import WhiteLogo from '../../../public/img/logo_white.svg';
-import leftBar from '../../../public/img/icon/left-bar.svg';
 
 const { Header } = Layout
 
@@ -73,7 +73,7 @@ const HeaderTop = () => {
 
     return (
         <>
-            <Header className="fixed w-full top-0 ltr:left-0 rtl:right-0 p-0 flex items-center justify-between bg-white dark:bg-[#1b1e2b] dark:shadow-[0_5px_20px_rgba(160,160,160,.02)] h-[72px] z-[99] font-Jost">
+            <Header className="fixed w-full top-0 ltr:left-0 rtl:right-0 p-0 flex items-center justify-between bg-white dark:bg-slate-900 dark:shadow-[0_5px_20px_rgba(160,160,160,.02)] h-[72px] z-[99] font-Jost">
                 <div className="flex flex-row items-center flex-1 h-full">
                     <div className=" rtl:ssm:pr-[15px] ltr:pr-5 rtl:pl-5 ltr:ssm:pl-[15px] ltr:ssm:pr-[15px] rtl:ssm::pl:[15px] ltr:pl-[30px] rtl:pr-[30px] xs:ltr:pl-[20px] xs:rtl:pr-[20px] min-w-[280px] ssm:min-w-[220px] xs:min-w-[170px] h-full grid align-middle">
                         <div className="flex items-center justify-between">
@@ -91,19 +91,15 @@ const HeaderTop = () => {
                                 />
                             </Link>
                             {!topMenu ||
-                            (typeof window !== 'undefined' &&
-                                window.innerWidth <= 1200) ? (
+                                (typeof window !== 'undefined' &&
+                                    window.innerWidth <= 1200) ? (
                                 <button
                                     className="p-0 bg-transparent border-none dark:border-transparent dark:bg-transparent dark:hover:text-primary text-[#525768] dark:text-white/60 hover:text-primary"
                                     onClick={() => {
                                         toggleCollapsed(!collapsed)
                                     }}
                                 >
-                                    <Image
-                                        src={leftBar}
-                                        alt="sidebar toggle"
-                                        className="[&>div>svg]:w-[20px] [&>div>svg]:h-[20px]"
-                                    />
+                                    <GiHamburgerMenu className="text-xl" />
                                 </button>
                             ) : null}
                         </div>
@@ -117,8 +113,8 @@ const HeaderTop = () => {
                         )}
                         <div className="flex flex-row items-center md:hidden me-[17px] ml-auto">
                             {isBrowser &&
-                            window.innerWidth > 1200 &&
-                            topMenu ? (
+                                window.innerWidth > 1200 &&
+                                topMenu ? (
                                 <div className="flex top-right-wrap">
                                     {/* <Customizer rtl={rtl} /> */}
                                     <AuthInfo rtl={rtl} />
@@ -143,11 +139,10 @@ const HeaderTop = () => {
             <Row>
                 <Col md={0} sm={24} xs={24}>
                     <div
-                        className={`w-full fixed top-0 ltr:left-0 rtl:right-0 py-2.5 md:px-[15px] md:py-2.5 shadow-[0px_2px_30px_#9299b810] [&>.hexadash-nav-actions__searchbar]:hidden dark:bg-[#1b1e2b] bg-white ${
-                            hide
-                                ? 'mt-0 opacity-0 -z-10'
-                                : 'mt-[72px] opacity-100 z-10'
-                        }`}
+                        className={`w-full fixed top-0 ltr:left-0 rtl:right-0 py-2.5 md:px-[15px] md:py-2.5 shadow-[0px_2px_30px_#9299b810] [&>.hexadash-nav-actions__searchbar]:hidden dark:bg-[#1b1e2b] bg-white ${hide
+                            ? 'mt-0 opacity-0 -z-10'
+                            : 'mt-[72px] opacity-100 z-10'
+                            }`}
                     >
                         <AuthInfo rtl={rtl} />
                     </div>

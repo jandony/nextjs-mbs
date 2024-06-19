@@ -33,7 +33,7 @@ function App({ Component, pageProps }: AppProps) {
                     </AuthContextProvider>
                 </UserProvider>
             );
-        } else if ( pathname.startsWith('/admin') ) {
+        } else if (pathname.startsWith('/admin')) {
             return (
                 <UserProvider profileUrl="//api/auth/me">
                     <AuthContextProvider>
